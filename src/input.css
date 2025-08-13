@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Outfit"),
+    url("https://fonts.gstatic.com/s/outfit/v10/1Ptug8zYS_SKggPNw4a0b2c.woff2")
+      format("woff2");
+}
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+}
+
+.Background {
+  background: url(../img/BackgroundOverlay.png) no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+#Profile {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#Profile:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px rgb(0, 53, 133);
+}
+
+#Card {
+  transition: transform 0.3s ease;
+}
+
+#Card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#darkBtn {
+  transition: transform 0.3s ease;
+}
+
+#darkBtn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+@keyframes rainbow-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#rainbow-bg {
+  background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 1400% 1400%;
+  animation: rainbow-bg 10s ease infinite;
+}
+
+@keyframes rgbBoxShadow {
+  0%   { box-shadow: 0 0 50px red; }
+  20%  { box-shadow: 0 0 50px orange; }
+  40%  { box-shadow: 0 0 50px yellow; }
+  60%  { box-shadow: 0 0 50px lime; }
+  80%  { box-shadow: 0 0 50px cyan; }
+  100% { box-shadow: 0 0 50px violet; }
+}
+
+#rainbow-card {
+  animation: rgbBoxShadow 3s infinite linear;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: cyan; }
+  71% { color: blue; }
+  85% { color: violet; }
+  100% { color: red; }
+}
+
+#rainbow-text {
+  animation: rainbow 3s linear infinite;
+}
+
+.spin-slow {
+  animation: spin 3s linear infinite;
+}
+.paused {
+  animation-play-state: paused;
+}

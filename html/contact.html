@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Hun Kimlong's personal website" />
+    <meta name="keywords" content="Hun Kimlong, personal website, portfolio" />
+    <meta name="author" content="Hun Kimlong" />
+    <link rel="icon" href="../img/Website.icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Hun Kimlong</title>
+  </head>
+ 
+  <body class="bg-white dark:bg-black transition">
+
+    <!---------------------------------Navbar---------------------------------->
+      <nav
+        class=" p-2.5"
+      >
+        <div class="flex text-sm md:text-xl items-center">
+          <a href="../index.html" class=""
+            ><img src="../img/Website.icon" alt="Logo" class="h-12"
+          /></a>
+          <ul class="flex justify-center items-center space-x-4 mx-auto">
+            <li>
+              <a
+                href="../index.html"
+                class="text-black dark:text-white hover:text-blue-900 transition font-semibold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="text-black dark:text-white hover:text-blue-900 transition font-semibold"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-black dark:text-white hover:text-blue-900 transition font-semibold" 
+                >About</a
+              >
+            </li>
+          </ul>
+          
+          <button id="darkBtn" onclick="toggleDarkMode()" class=" text-white dark:text-black text-xl md:text-3xl flex justify-center items-center mr-2 md:mr-5 transition">☀️</button>
+          <a
+            href="./contact.html"
+            class="flex justify-center text-white bg-[#0e61a6] rounded-xl hover:bg-blue-900 transition p-2 font-semibold h-fit dark:bg-blue-900 dark:shadow-[0_0_15px_blue] dark:hover:bg-blue-950 "
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!---------------------------------Contact---------------------------------->
+    <section>
+        <div class="min-h-screen px-6 py-12 max-w-6xl mx-auto text-black dark:text-white">
+
+            <!-- Heading -->
+            <h1 class="text-4xl font-bold mb-4 text-center">Get in Touch</h1>
+            <p class="text-center text-gray-600 dark:text-gray-200 mb-10">
+              Have a project or just want to say hi? Fill out the form below or reach me directly.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <!-- Contact Form -->
+              <form class=" space-y-6 ">
+                <div>
+                  <label for="name" class="block mb-1 text-sm font-medium">Name</label>
+                  <input type="text" id="name" name="name" required
+                    class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+        
+                <div>
+                  <label for="email" class="block mb-1 text-sm font-medium">Email</label>
+                  <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+        
+                <div>
+                  <label for="message" class="block mb-1 text-sm font-medium">Message</label>
+                  <textarea id="message" name="message" rows="5" required
+                    class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+        
+                <button type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 text-white px-6 dark:bg-blue-900 dark:shadow-[0_0_15px_blue] dark:hover:bg-blue-950 py-2 rounded transition">
+                  Send Message
+                </button>
+              </form>
+        
+              <!-- Contact Info -->
+              <div class="space-y-6 mt-5">
+                <div>
+                  <h2 class="text-2xl font-semibold mb-2">Contact Information</h2>
+                  <p class="text-gray-700 dark:text-gray-400">You can also reach me via the channels below:</p>
+                </div>
+        
+                <div>
+                  <p><strong>Email:</strong> <a href="mailto:caleb@example.com" class="text-blue-600 dark:text-blue-400">Kimlongplayer@gmail.com</a></p>
+                  <p><strong>Phone:</strong> +855 123 456 789</p>
+                  <p><strong>Location:</strong> Phnom Penh, Cambodia</p>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg font-semibold mb-2">Follow Me</h3>
+                  <div class="flex gap-4">
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Twitter</a>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">LinkedIn</a>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Dribbble</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+       <!----------------------------------Footer------------------------------------------->
+    
+<footer id="footer" class="bg-blue-950 text-white py-8 mt-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+  
+      <!-- Column 1: Logo / Name -->
+      <div>
+        <h2 class="text-2xl font-bold">Hun Kimlong</h2>
+        <p class="mt-2 text-gray-400">Digital Designer</p>
+      </div>
+  
+      <!-- Column 2: Navigation Links -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">Portfolio</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: Social Media / Contact -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Get in Touch</h3>
+        <p class="text-gray-400">Email: <a href="mailto:Kimlongplayer@gmail.com" class="hover:text-white">Kimlongplayer@gmail.com</a></p>
+        <div class="flex justify-center md:justify-start mt-4 space-x-4">
+          <a href="#" class="hover:text-teal-400 transition">Twitter</a>
+          <a href="#" class="hover:text-teal-400 transition">LinkedIn</a>
+          <a href="#" class="hover:text-teal-400 transition">Dribbble</a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Bottom -->
+    <div class="mt-8 text-center text-sm text-gray-500">
+      &copy; 2025 Hun Kimlong. All rights reserved.
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="../js/script.js"></script>
+</body>
+</html>
